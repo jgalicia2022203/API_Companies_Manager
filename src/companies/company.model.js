@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const companySchema = mongoose.Schema({
+const CompanySchema = mongoose.Schema({
   name: {
     type: String,
     required: [true, "The company name is obligatory"],
@@ -27,10 +27,10 @@ const companySchema = mongoose.Schema({
   },
 });
 
-companySchema.methods.toJson = function () {
+CompanySchema.methods.toJson = function () {
   const { __v, _id, ...company } = this.toObject();
   company.uid = _id;
   return company;
 };
 
-export default mongoose.model("company", companySchema);
+export default mongoose.model("company", CompanySchema);
