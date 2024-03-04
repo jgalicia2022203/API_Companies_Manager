@@ -1,0 +1,128 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "COPEREX_2022203",
+    "dateExported": "2024-03-04T06:05:31.551Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "90eb6b07-90f5-4f24-9501-93f70040d6d1",
+            "colId": "d011b02f-bfe2-40ad-9af4-e1d9c723c335",
+            "containerId": "",
+            "name": "REGISTER",
+            "url": "http://localhost:3000/COPEREX/v1/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T05:45:16.505Z",
+            "modified": "2024-03-04T05:48:34.294Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"braulio80\",\n  \"email\": \"braulio80@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "909565b0-1c55-4cca-9032-2000c2e8f370",
+            "colId": "d011b02f-bfe2-40ad-9af4-e1d9c723c335",
+            "containerId": "",
+            "name": "LOGIN",
+            "url": "http://localhost:3000/COPEREX/v1/auth/login",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-03-04T05:46:48.016Z",
+            "modified": "2024-03-04T05:49:06.750Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"emailOrUsername\": \"braulio80\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f4d68d41-3495-430c-a30d-8e26fd42bfdb",
+            "colId": "d011b02f-bfe2-40ad-9af4-e1d9c723c335",
+            "containerId": "",
+            "name": "COMPANIES LIST",
+            "url": "http://localhost:3000/COPEREX/v1/users/companies",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-04T05:46:00.567Z",
+            "modified": "2024-03-04T06:05:04.715Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "666d7ef4-6e85-476d-bb11-b0cd740184e2",
+            "colId": "d011b02f-bfe2-40ad-9af4-e1d9c723c335",
+            "containerId": "",
+            "name": "CREATE COMPANY",
+            "url": "http://localhost:3000/COPEREX/v1/users/companies",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-04T05:46:12.743Z",
+            "modified": "2024-03-04T06:05:10.492Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Example Company\",\n  \"trajectory\": \"5\",\n  \"impact\": \"High\",\n  \"category\": \"Technology\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f39404c2-d6e1-42ec-b2ba-f3c088361b42",
+            "colId": "d011b02f-bfe2-40ad-9af4-e1d9c723c335",
+            "containerId": "",
+            "name": "EDIT COMPANY",
+            "url": "http://localhost:3000/COPEREX/v1/users/companies/companyid_here",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-04T05:46:22.958Z",
+            "modified": "2024-03-04T06:05:23.380Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Edited Company\",\n  \"trajectory\": \"10\",\n  \"impact\": \"Mid\",\n  \"category\": \"Technology\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2b212d5e-83ee-4081-a495-685cc5bd70a0",
+            "colId": "d011b02f-bfe2-40ad-9af4-e1d9c723c335",
+            "containerId": "",
+            "name": "REPORT",
+            "url": "http://localhost:3000/COPEREX/v1/users/report",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-04T05:46:40.473Z",
+            "modified": "2024-03-04T05:51:58.883Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

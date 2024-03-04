@@ -1,4 +1,5 @@
 import bcryptjs from "bcryptjs";
+import Excel from "excel4node";
 import Company from "../companies/company.model.js";
 import User from "./user.model.js";
 
@@ -56,7 +57,7 @@ export const createCompany = async (req, res) => {
 };
 
 export const editCompany = async (req, res) => {
-  const { companyId } = req.params;
+  const companyId = req.params.id;
   const { name, trajectory, impact, category } = req.body;
 
   try {
